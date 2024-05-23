@@ -1,4 +1,4 @@
-[gd_scene load_steps=119 format=3 uid="uid://371rtpt14mka"]
+[gd_scene load_steps=132 format=3 uid="uid://371rtpt14mka"]
 
 [ext_resource type="Texture2D" uid="uid://c3ts25ivoc4gn" path="res://payman2/models/player/Base/David/Player.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://bo0pit3s6l45m" path="res://payman2/materials/ui/dot.png" id="2"]
@@ -557,10 +557,16 @@ animation = &"PistolShootLeft"
 animation = &"PistolShootRight"
 
 [sub_resource type="AnimationNodeAnimation" id="107"]
-animation = &"PistolShootUp"
+animation = &"PistolShootLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="108"]
-animation = &"PistolShootDown"
+animation = &"PistolShootLeft"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_j7g4k"]
+animation = &"PistolShootRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_agav2"]
+animation = &"PistolShootRight"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="109"]
 blend_point_0/node = SubResource("105")
@@ -568,16 +574,20 @@ blend_point_0/pos = Vector2(-1, 0)
 blend_point_1/node = SubResource("106")
 blend_point_1/pos = Vector2(1, 0)
 blend_point_2/node = SubResource("107")
-blend_point_2/pos = Vector2(0, -1)
+blend_point_2/pos = Vector2(-0.1, -1)
 blend_point_3/node = SubResource("108")
-blend_point_3/pos = Vector2(0, 1)
+blend_point_3/pos = Vector2(-0.1, 1)
+blend_point_4/node = SubResource("AnimationNodeAnimation_j7g4k")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_agav2")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="110"]
-animation = &"PistolShootDownFired"
+animation = &"PistolShootLeftFired"
 
 [sub_resource type="AnimationNodeAnimation" id="111"]
-animation = &"PistolShootUpFired"
+animation = &"PistolShootLeftFired"
 
 [sub_resource type="AnimationNodeAnimation" id="112"]
 animation = &"PistolShootRightFired"
@@ -585,27 +595,40 @@ animation = &"PistolShootRightFired"
 [sub_resource type="AnimationNodeAnimation" id="113"]
 animation = &"PistolShootLeftFired"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8vts1"]
+animation = &"PistolShootRightFired"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_fucb4"]
+animation = &"PistolShootRightFired"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id="114"]
 blend_point_0/node = SubResource("110")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(-0.1, 1)
 blend_point_1/node = SubResource("111")
-blend_point_1/pos = Vector2(0, -1)
+blend_point_1/pos = Vector2(-0.1, -1)
 blend_point_2/node = SubResource("112")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_3/node = SubResource("113")
 blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_8vts1")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_fucb4")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="115"]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="116"]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4pmhy"]
+advance_mode = 2
+
 [sub_resource type="AnimationNodeStateMachine" id="117"]
 states/PistolAim/node = SubResource("109")
 states/PistolAim/position = Vector2(324, 102)
 states/PistolShot/node = SubResource("114")
 states/PistolShot/position = Vector2(598, 102)
-transitions = ["PistolAim", "PistolShot", SubResource("115"), "PistolShot", "PistolAim", SubResource("116")]
+transitions = ["PistolAim", "PistolShot", SubResource("115"), "PistolShot", "PistolAim", SubResource("116"), "Start", "PistolAim", SubResource("AnimationNodeStateMachineTransition_4pmhy")]
 
 [sub_resource type="Animation" id="80"]
 resource_name = "PistolAnimDown"
@@ -1044,10 +1067,10 @@ _data = {
 }
 
 [sub_resource type="AnimationNodeAnimation" id="85"]
-animation = &"PistolAnimDown"
+animation = &"PistolAnimLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="86"]
-animation = &"PistolAnimUp"
+animation = &"PistolAnimLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="87"]
 animation = &"PistolAnimRight"
@@ -1055,22 +1078,32 @@ animation = &"PistolAnimRight"
 [sub_resource type="AnimationNodeAnimation" id="88"]
 animation = &"PistolAnimLeft"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w3nef"]
+animation = &"PistolAnimRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_14rtr"]
+animation = &"PistolAnimRight"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id="89"]
 blend_point_0/node = SubResource("85")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(-0.1, 1)
 blend_point_1/node = SubResource("86")
-blend_point_1/pos = Vector2(0, -1)
+blend_point_1/pos = Vector2(-0.1, -1)
 blend_point_2/node = SubResource("87")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_3/node = SubResource("88")
 blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_w3nef")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_14rtr")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="90"]
-animation = &"PistolAnimDownShot"
+animation = &"PistolAnimLeftShot"
 
 [sub_resource type="AnimationNodeAnimation" id="91"]
-animation = &"PistolAnimUpShot"
+animation = &"PistolAnimLeftShot"
 
 [sub_resource type="AnimationNodeAnimation" id="92"]
 animation = &"PistolAnimRightShot"
@@ -1078,15 +1111,25 @@ animation = &"PistolAnimRightShot"
 [sub_resource type="AnimationNodeAnimation" id="93"]
 animation = &"PistolAnimLeftShot"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_vgvop"]
+animation = &"PistolAnimRightShot"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yphif"]
+animation = &"PistolAnimRightShot"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id="94"]
 blend_point_0/node = SubResource("90")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(-0.1, 1)
 blend_point_1/node = SubResource("91")
-blend_point_1/pos = Vector2(0, -1)
+blend_point_1/pos = Vector2(-0.1, -1)
 blend_point_2/node = SubResource("92")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_3/node = SubResource("93")
 blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_vgvop")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_yphif")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="95"]
@@ -1713,10 +1756,10 @@ _data = {
 }
 
 [sub_resource type="AnimationNodeAnimation" id="41"]
-animation = &"IdleDown"
+animation = &"IdleLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="42"]
-animation = &"IdleUp"
+animation = &"IdleLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="43"]
 animation = &"IdleRight"
@@ -1736,10 +1779,10 @@ blend_point_3/pos = Vector2(-1, 0)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="46"]
-animation = &"IdleShootDown"
+animation = &"IdleShootLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="47"]
-animation = &"IdleShootUp"
+animation = &"IdleShootLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="48"]
 animation = &"IdleShootRight"
@@ -1747,15 +1790,25 @@ animation = &"IdleShootRight"
 [sub_resource type="AnimationNodeAnimation" id="49"]
 animation = &"IdleShootLeft"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_44juu"]
+animation = &"IdleShootRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_a1xg5"]
+animation = &"IdleShootRight"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id="50"]
 blend_point_0/node = SubResource("46")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(-0.1, 1)
 blend_point_1/node = SubResource("47")
-blend_point_1/pos = Vector2(0, -1)
+blend_point_1/pos = Vector2(-0.1, -1)
 blend_point_2/node = SubResource("48")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_3/node = SubResource("49")
 blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_44juu")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_a1xg5")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="51"]
@@ -1782,10 +1835,10 @@ blend_point_3/pos = Vector2(-1, 0)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="56"]
-animation = &"RunShootUp"
+animation = &"RunShootLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="57"]
-animation = &"RunShootDown"
+animation = &"RunShootLeft"
 
 [sub_resource type="AnimationNodeAnimation" id="58"]
 animation = &"RunShootRight"
@@ -1793,15 +1846,25 @@ animation = &"RunShootRight"
 [sub_resource type="AnimationNodeAnimation" id="59"]
 animation = &"RunShootLeft"
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_l374k"]
+animation = &"RunShootRight"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_y3gu8"]
+animation = &"RunShootRight"
+
 [sub_resource type="AnimationNodeBlendSpace2D" id="60"]
 blend_point_0/node = SubResource("56")
-blend_point_0/pos = Vector2(0, -1)
+blend_point_0/pos = Vector2(-0.1, -1)
 blend_point_1/node = SubResource("57")
-blend_point_1/pos = Vector2(0, 1)
+blend_point_1/pos = Vector2(-0.1, 1)
 blend_point_2/node = SubResource("58")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_3/node = SubResource("59")
 blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_l374k")
+blend_point_4/pos = Vector2(0.1, 1)
+blend_point_5/node = SubResource("AnimationNodeAnimation_y3gu8")
+blend_point_5/pos = Vector2(0.1, -1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="61"]
@@ -1882,35 +1945,32 @@ scale = Vector2(0.588235, 0.588235)
 texture = ExtResource("5")
 
 [node name="Head" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(-1, -19)
+position = Vector2(0, -19)
 texture = ExtResource("7")
-offset = Vector2(0, 6)
+offset = Vector2(0, -6)
 hframes = 2
-frame = 1
 
 [node name="Body" type="Sprite2D" parent="."]
 position = Vector2(0, -15)
 texture = ExtResource("1")
 hframes = 48
-frame = 24
+frame = 37
 
 [node name="Gun" type="Sprite2D" parent="."]
-position = Vector2(0, -17)
+position = Vector2(-2, -17)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8")
 centered = false
-offset = Vector2(4, -13)
+offset = Vector2(10, -20)
 hframes = 4
-frame = 3
 
 [node name="Hands" type="Sprite2D" parent="."]
-position = Vector2(0, -17)
+position = Vector2(2, -17)
 texture = ExtResource("6")
 centered = false
 offset = Vector2(0, -8)
 hframes = 8
-frame = 3
+frame = 1
 
 [node name="E" type="Sprite2D" parent="."]
 visible = false
@@ -1929,6 +1989,7 @@ centered = false
 
 [node name="Aim" type="Sprite2D" parent="bulletpoint"]
 modulate = Color(1, 1, 1, 0.196078)
+position = Vector2(14, 1)
 scale = Vector2(200, 1)
 texture = ExtResource("9")
 centered = false
@@ -1974,6 +2035,54 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationTree"]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationTree/AnimationTree"]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree2" type="AnimationTree" parent="AnimationTree/AnimationTree"]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationTree/AnimationTree/AnimationTree2"]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree3" type="AnimationTree" parent="AnimationTree/AnimationTree"]
+tree_root = SubResource("73")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0, 0)
+parameters/IdleShoot/blend_position = Vector2(0, 0)
+parameters/Run/blend_position = Vector2(0, 0)
+parameters/RunShoot/blend_position = Vector2(0, 0)
+
+[node name="AnimationTree" type="AnimationTree" parent="AnimationTree/AnimationTree/AnimationTree3"]
 tree_root = SubResource("73")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0, 0)

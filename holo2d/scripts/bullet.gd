@@ -8,9 +8,5 @@ func _on_bullet_body_entered(body):
 		sound = 1
 	hide()
 
-func _ready():
-	var impulse = Vector2(1000, 0).rotated(rotation)
-	apply_impulse(Vector2.ZERO, impulse)
-
 func _on_AudioStreamPlayer2D_finished():
 	queue_free()
