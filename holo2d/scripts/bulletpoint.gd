@@ -4,7 +4,7 @@ extends Node2D
 @export var bullet_speed = 800
 @export var fire_rate = 0.08
 
-var bullet = preload("res://payman2/models/props/bullet.tscn")
+var bullet = preload("res://ghostprotocol/models/props/bullet.tscn")
 var can_fire = true
 var running = false
 var shootingnetwork
@@ -19,7 +19,6 @@ var secondaryweapon
 @onready var animationState2 = animationTree2.get("parameters/playback")
 
 func _ready():
-	shootingnetwork = get_parent().state
 	animationState2.travel("GunPistolAim")
 	animationState.travel("PistolAim")
 
@@ -29,7 +28,7 @@ func direction():
 	animationTree2.set("parameters/GunPistolAim/blend_position", mouseposition - get_parent().position)
 	animationTree2.set("parameters/GunPistolShot/blend_position", mouseposition - get_parent().position)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	mouseposition = get_global_mouse_position()
 	direction()
 	shoot()

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://f2pqcb8qbxd1"
-path="res://.godot/imported/Glock-1.wav-5e5c5636d1db8197862399d376104bb5.sample"
+path="res://.godot/imported/Glock-1.wav-a952674f4febe8f874bc5803af39f7f6.sample"
 
 [deps]
 
-source_file="res://payman2/sounds/sfx/Glock-1.wav"
-dest_files=["res://.godot/imported/Glock-1.wav-5e5c5636d1db8197862399d376104bb5.sample"]
+source_file="res://ghostprotocol/sounds/sfx/Glock-1.wav"
+dest_files=["res://.godot/imported/Glock-1.wav-a952674f4febe8f874bc5803af39f7f6.sample"]
 
 [params]
 

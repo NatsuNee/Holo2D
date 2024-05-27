@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bxgiw081pot1o"
-path="res://.godot/imported/Birds.ogg-70b2ae8cc65a18b1b172c1fd8ea35ae0.oggvorbisstr"
+path="res://.godot/imported/Birds.ogg-1b4a5d2bd03e4dd2e8000a1a8b64ba5d.oggvorbisstr"
 
 [deps]
 
-source_file="res://payman2/sounds/sfx/Birds.ogg"
-dest_files=["res://.godot/imported/Birds.ogg-70b2ae8cc65a18b1b172c1fd8ea35ae0.oggvorbisstr"]
+source_file="res://ghostprotocol/sounds/sfx/Birds.ogg"
+dest_files=["res://.godot/imported/Birds.ogg-1b4a5d2bd03e4dd2e8000a1a8b64ba5d.oggvorbisstr"]
 
 [params]
 

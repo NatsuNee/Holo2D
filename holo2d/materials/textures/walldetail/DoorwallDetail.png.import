@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boixdexworb5t"
-path="res://.godot/imported/DoorwallDetail.png-11a34e7d8a203c9f6af6dcd7b5f46973.ctex"
+path="res://.godot/imported/DoorwallDetail.png-d8baa52d523183e324437a97584abbc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/walldetail/DoorwallDetail.png"
-dest_files=["res://.godot/imported/DoorwallDetail.png-11a34e7d8a203c9f6af6dcd7b5f46973.ctex"]
+source_file="res://ghostprotocol/materials/textures/walldetail/DoorwallDetail.png"
+dest_files=["res://.godot/imported/DoorwallDetail.png-d8baa52d523183e324437a97584abbc3.ctex"]
 
 [params]
 

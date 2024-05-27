@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://461ck2otv18x"
-path="res://.godot/imported/3WidthWindow-white.png-ab8bfe73bb22bee5fb96c3e22539f159.ctex"
+path="res://.godot/imported/3WidthWindow-white.png-2197e461f4b101713ac4819bf67632af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/walldetail/3WidthWindow-white.png"
-dest_files=["res://.godot/imported/3WidthWindow-white.png-ab8bfe73bb22bee5fb96c3e22539f159.ctex"]
+source_file="res://ghostprotocol/materials/textures/walldetail/3WidthWindow-white.png"
+dest_files=["res://.godot/imported/3WidthWindow-white.png-2197e461f4b101713ac4819bf67632af.ctex"]
 
 [params]
 

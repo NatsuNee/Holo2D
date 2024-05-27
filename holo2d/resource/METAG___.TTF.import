@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://c87gbpsc2h2p6"
-path="res://.godot/imported/METAG___.TTF-9db7deae4be1f3b61e946f39c89621ea.fontdata"
+path="res://.godot/imported/METAG___.TTF-b4749cee29ab5e21289432213923c1a7.fontdata"
 
 [deps]
 
-source_file="res://payman2/resource/METAG___.TTF"
-dest_files=["res://.godot/imported/METAG___.TTF-9db7deae4be1f3b61e946f39c89621ea.fontdata"]
+source_file="res://ghostprotocol/resource/METAG___.TTF"
+dest_files=["res://.godot/imported/METAG___.TTF-b4749cee29ab5e21289432213923c1a7.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvy2gsyni50al"
-path="res://.godot/imported/LeftLeg.png-c6e812ce712efd4f0ab4c7cb0ef88dd2.ctex"
+path="res://.godot/imported/LeftLeg.png-b70b5c69a889947023869f2f47f3432a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/models/player/Base/Right/LeftLeg.png"
-dest_files=["res://.godot/imported/LeftLeg.png-c6e812ce712efd4f0ab4c7cb0ef88dd2.ctex"]
+source_file="res://ghostprotocol/models/player/Base/Right/LeftLeg.png"
+dest_files=["res://.godot/imported/LeftLeg.png-b70b5c69a889947023869f2f47f3432a.ctex"]
 
 [params]
 

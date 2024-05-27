@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://slfov53t6xaa"
-path="res://.godot/imported/Head.png-7a7dac9ff7520de9f53456d7864c1f83.ctex"
+path="res://.godot/imported/Head.png-6c767005fb10d7d7331a2ccdbd09a054.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/models/player/Base/Forward/Head.png"
-dest_files=["res://.godot/imported/Head.png-7a7dac9ff7520de9f53456d7864c1f83.ctex"]
+source_file="res://ghostprotocol/models/player/Base/Forward/Head.png"
+dest_files=["res://.godot/imported/Head.png-6c767005fb10d7d7331a2ccdbd09a054.ctex"]
 
 [params]
 

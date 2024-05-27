@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuh5palydvsxb"
-path="res://.godot/imported/RightArm.png-2cd6c9f379aab111d5effe58c753ed55.ctex"
+path="res://.godot/imported/RightArm.png-4ca6b976a3d1a002842e10577217ede2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/models/player/Base/Right/RightArm.png"
-dest_files=["res://.godot/imported/RightArm.png-2cd6c9f379aab111d5effe58c753ed55.ctex"]
+source_file="res://ghostprotocol/models/player/Base/Right/RightArm.png"
+dest_files=["res://.godot/imported/RightArm.png-4ca6b976a3d1a002842e10577217ede2.ctex"]
 
 [params]
 

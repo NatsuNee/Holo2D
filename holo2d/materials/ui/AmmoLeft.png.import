@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxawrkcifuv5m"
-path="res://.godot/imported/AmmoLeft.png-d270f597abe3b7aacc77bc61634f0ee1.ctex"
+path="res://.godot/imported/AmmoLeft.png-d6d4c6743953ecf98a82d0292c0d7880.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/ui/AmmoLeft.png"
-dest_files=["res://.godot/imported/AmmoLeft.png-d270f597abe3b7aacc77bc61634f0ee1.ctex"]
+source_file="res://ghostprotocol/materials/ui/AmmoLeft.png"
+dest_files=["res://.godot/imported/AmmoLeft.png-d6d4c6743953ecf98a82d0292c0d7880.ctex"]
 
 [params]
 

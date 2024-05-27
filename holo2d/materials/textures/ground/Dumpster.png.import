@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4gmiuru5eiou"
-path="res://.godot/imported/Dumpster.png-135d2995cadec31d81a35ebb4bda7a6e.ctex"
+path="res://.godot/imported/Dumpster.png-64d4ba4ba800156854fc1a8c9fedf783.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/ground/Dumpster.png"
-dest_files=["res://.godot/imported/Dumpster.png-135d2995cadec31d81a35ebb4bda7a6e.ctex"]
+source_file="res://ghostprotocol/materials/textures/ground/Dumpster.png"
+dest_files=["res://.godot/imported/Dumpster.png-64d4ba4ba800156854fc1a8c9fedf783.ctex"]
 
 [params]
 

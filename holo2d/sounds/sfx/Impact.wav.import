@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://4cnl21a6x1no"
-path="res://.godot/imported/Impact.wav-69ab5af98badf82a877addda0cec0e72.sample"
+path="res://.godot/imported/Impact.wav-d40049a16c343639b918d9377a97b822.sample"
 
 [deps]
 
-source_file="res://payman2/sounds/sfx/Impact.wav"
-dest_files=["res://.godot/imported/Impact.wav-69ab5af98badf82a877addda0cec0e72.sample"]
+source_file="res://ghostprotocol/sounds/sfx/Impact.wav"
+dest_files=["res://.godot/imported/Impact.wav-d40049a16c343639b918d9377a97b822.sample"]
 
 [params]
 

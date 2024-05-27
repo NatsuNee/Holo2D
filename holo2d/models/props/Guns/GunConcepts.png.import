@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw7u3egu31lcq"
-path="res://.godot/imported/GunConcepts.png-4430c54a6ce989d68e06734b4a08b1cd.ctex"
+path="res://.godot/imported/GunConcepts.png-f26ff9426571f18e6a0733d07fbb5d8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/models/props/Guns/GunConcepts.png"
-dest_files=["res://.godot/imported/GunConcepts.png-4430c54a6ce989d68e06734b4a08b1cd.ctex"]
+source_file="res://ghostprotocol/models/props/Guns/GunConcepts.png"
+dest_files=["res://.godot/imported/GunConcepts.png-f26ff9426571f18e6a0733d07fbb5d8f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccnd456ws0dvy"
-path="res://.godot/imported/Graffiti.png-6fcf5ede8999ac92debb46bd2227f242.ctex"
+path="res://.godot/imported/Graffiti.png-9508b43fe1e60ccf7172020bce4e3425.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/walldetail/Graffiti.png"
-dest_files=["res://.godot/imported/Graffiti.png-6fcf5ede8999ac92debb46bd2227f242.ctex"]
+source_file="res://ghostprotocol/materials/textures/walldetail/Graffiti.png"
+dest_files=["res://.godot/imported/Graffiti.png-9508b43fe1e60ccf7172020bce4e3425.ctex"]
 
 [params]
 

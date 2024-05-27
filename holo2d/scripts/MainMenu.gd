@@ -20,7 +20,7 @@ func _on_Quit_pressed():
 	get_tree().quit()
 
 func _player_connected(id):
-	var game = preload("res://payman2/maps/Tutorial.tscn").instance()
+	var game = preload("res://ghostprotocol/maps/Tutorial.tscn").instance()
 	get_tree().get_root().add_child(game)
 	hide()
 	

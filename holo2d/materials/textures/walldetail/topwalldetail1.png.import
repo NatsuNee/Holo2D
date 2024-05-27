@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d10mucecjd3te"
-path="res://.godot/imported/topwalldetail1.png-022473522cac274d8c605a53bb8e8c2f.ctex"
+path="res://.godot/imported/topwalldetail1.png-0b5147bd047748409a599e185b6ef232.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/walldetail/topwalldetail1.png"
-dest_files=["res://.godot/imported/topwalldetail1.png-022473522cac274d8c605a53bb8e8c2f.ctex"]
+source_file="res://ghostprotocol/materials/textures/walldetail/topwalldetail1.png"
+dest_files=["res://.godot/imported/topwalldetail1.png-0b5147bd047748409a599e185b6ef232.ctex"]
 
 [params]
 

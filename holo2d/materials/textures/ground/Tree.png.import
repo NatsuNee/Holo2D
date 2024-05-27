@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbadgfqf4pxog"
-path="res://.godot/imported/Tree.png-0e4792cfc07dfcaa9214e17644a78329.ctex"
+path="res://.godot/imported/Tree.png-c06fa2577fd294c630d6afcdc578dc69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/ground/Tree.png"
-dest_files=["res://.godot/imported/Tree.png-0e4792cfc07dfcaa9214e17644a78329.ctex"]
+source_file="res://ghostprotocol/materials/textures/ground/Tree.png"
+dest_files=["res://.godot/imported/Tree.png-c06fa2577fd294c630d6afcdc578dc69.ctex"]
 
 [params]
 

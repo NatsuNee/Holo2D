@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnt3n4k04ttsj"
-path="res://.godot/imported/Aimhelper.png-546ef06d78db87975e21a5ca0cb1cf95.ctex"
+path="res://.godot/imported/Aimhelper.png-9351edfbfc2182295a9ab724c036988c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/ui/Aimhelper.png"
-dest_files=["res://.godot/imported/Aimhelper.png-546ef06d78db87975e21a5ca0cb1cf95.ctex"]
+source_file="res://ghostprotocol/materials/ui/Aimhelper.png"
+dest_files=["res://.godot/imported/Aimhelper.png-9351edfbfc2182295a9ab724c036988c.ctex"]
 
 [params]
 

@@ -3,8 +3,6 @@ extends CharacterBody2D
 var ACCELERATION = 2000
 var MAX_SPEED = 120
 const FRICTION = 800
-
-var state = "singleplayer"
 var mouseposition
 var lookat = "mouse"
 var running
@@ -13,17 +11,12 @@ var shooting
 @onready var animationTree = $AnimationTree
 @onready var animationState = animationTree.get("parameters/playback")
 
-func _ready():
-	var animationPlayer = $AnimationPlayer
-
 @rpc func _set_position(pos):
 	global_transform.origin = pos
 
 func movementype(delta):
-	match state:
-		"singleplayer":
-			move(delta)
-			move_and_slide()
+	move(delta)
+	move_and_slide()
 					
 func move(delta):
 	$Camera2D.enabled = true
@@ -43,17 +36,17 @@ func move(delta):
 			running = "false"
 			animationState.travel("RunShoot")
 			runningfunc()
-		lookatfunc(input_vector, mouseposition - position)
+		lookatfunc(input_vector)
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		lookat = "mouse"
 		running = "false"
 		runningfunc()
-		lookatfunc(input_vector, mouseposition - position)
+		lookatfunc(input_vector)
 		animationState.travel("IdleShoot")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 					
-func lookatfunc(input_vector, mouseposition):
+func lookatfunc(input_vector):
 	match lookat:
 		"mouse":
 			animationTree.set("parameters/Idle/blend_position", mouseposition)

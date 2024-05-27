@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk2omakpfhra"
-path="res://.godot/imported/E.png-8abd772c04444b3ec6d1de9e66f9e04a.ctex"
+path="res://.godot/imported/E.png-fd6e872a8817682cd0805fcf598c2a8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/ui/E.png"
-dest_files=["res://.godot/imported/E.png-8abd772c04444b3ec6d1de9e66f9e04a.ctex"]
+source_file="res://ghostprotocol/materials/ui/E.png"
+dest_files=["res://.godot/imported/E.png-fd6e872a8817682cd0805fcf598c2a8b.ctex"]
 
 [params]
 

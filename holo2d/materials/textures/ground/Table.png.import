@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm75hq740adc2"
-path="res://.godot/imported/Table.png-4f981db2a4da96a1dbea18fd2a1000ec.ctex"
+path="res://.godot/imported/Table.png-37e3aecbef77cb6b3991414351cfa7cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/ground/Table.png"
-dest_files=["res://.godot/imported/Table.png-4f981db2a4da96a1dbea18fd2a1000ec.ctex"]
+source_file="res://ghostprotocol/materials/textures/ground/Table.png"
+dest_files=["res://.godot/imported/Table.png-37e3aecbef77cb6b3991414351cfa7cd.ctex"]
 
 [params]
 

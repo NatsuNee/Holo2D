@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cvutx6nl7yfqq"]
 
-[ext_resource type="Texture2D" uid="uid://bm0u04cd23vs" path="res://payman2/materials/ui/Bullet.png" id="1"]
-[ext_resource type="Script" path="res://payman2/scripts/bullet.gd" id="2"]
-[ext_resource type="AudioStream" uid="uid://4cnl21a6x1no" path="res://payman2/sounds/sfx/Impact.wav" id="3"]
+[ext_resource type="Texture2D" uid="uid://bm0u04cd23vs" path="res://ghostprotocol/materials/ui/Bullet.png" id="1"]
+[ext_resource type="Script" path="res://ghostprotocol/scripts/bullet.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://4cnl21a6x1no" path="res://ghostprotocol/sounds/sfx/Impact.wav" id="3"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(2, 1.01563)

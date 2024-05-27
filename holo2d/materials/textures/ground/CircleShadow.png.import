@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cq6fjnpf8y5tn"
-path="res://.godot/imported/CircleShadow.png-a19658ced1d8d6f8d17ec8eeef5fcc87.ctex"
+path="res://.godot/imported/CircleShadow.png-1e5262e0d449f877d9a1b9a4c4d3e97f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://payman2/materials/textures/ground/CircleShadow.png"
-dest_files=["res://.godot/imported/CircleShadow.png-a19658ced1d8d6f8d17ec8eeef5fcc87.ctex"]
+source_file="res://ghostprotocol/materials/textures/ground/CircleShadow.png"
+dest_files=["res://.godot/imported/CircleShadow.png-1e5262e0d449f877d9a1b9a4c4d3e97f.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dwjcaey0fs6yv"
-path="res://.godot/imported/Tactical Espionage Action.ttf-3bb43425142b19c2ebe512155466c98f.fontdata"
+path="res://.godot/imported/Tactical Espionage Action.ttf-211a141e5d6aef7c2540f4ba3d2f2416.fontdata"
 
 [deps]
 
-source_file="res://payman2/resource/Tactical Espionage Action.ttf"
-dest_files=["res://.godot/imported/Tactical Espionage Action.ttf-3bb43425142b19c2ebe512155466c98f.fontdata"]
+source_file="res://ghostprotocol/resource/Tactical Espionage Action.ttf"
+dest_files=["res://.godot/imported/Tactical Espionage Action.ttf-211a141e5d6aef7c2540f4ba3d2f2416.fontdata"]
 
 [params]
 
