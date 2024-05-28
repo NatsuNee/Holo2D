@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://v7ogd3xmyswl"]
+
+[ext_resource type="PackedScene" uid="uid://du6tn1yukn3ef" path="res://ghostprotocol/maps/map_test/layer_0_test.tscn" id="0"]
+[ext_resource type="Script" path="res://ghostprotocol/maps/map_test/map_test.gd" id="1_j75ds"]
+
+[node name="map_test" type="Node2D"]
+script = ExtResource("1_j75ds")
+
+[node name="0_Unnamed Layer" parent="." instance=ExtResource("0")]

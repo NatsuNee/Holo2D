@@ -3,7 +3,6 @@ extends CharacterBody2D
 var ACCELERATION = 2000
 var MAX_SPEED = 120
 const FRICTION = 800
-var mouseposition
 var lookat = "mouse"
 var running
 var shooting
@@ -20,7 +19,7 @@ func movementype(delta):
 					
 func move(delta):
 	$Camera2D.enabled = true
-	mouseposition = get_global_mouse_position()
+	var mouseposition = get_global_mouse_position()
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
 	input_vector.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
@@ -36,23 +35,23 @@ func move(delta):
 			running = "false"
 			animationState.travel("RunShoot")
 			runningfunc()
-		lookatfunc(input_vector)
+		lookatfunc(input_vector, mouseposition)
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
 		lookat = "mouse"
 		running = "false"
 		runningfunc()
-		lookatfunc(input_vector)
+		lookatfunc(input_vector, mouseposition)
 		animationState.travel("IdleShoot")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 					
-func lookatfunc(input_vector):
+func lookatfunc(input_vector, mouseposition):
 	match lookat:
 		"mouse":
-			animationTree.set("parameters/Idle/blend_position", mouseposition)
-			animationTree.set("parameters/Run/blend_position", mouseposition)
-			animationTree.set("parameters/IdleShoot/blend_position", mouseposition)
-			animationTree.set("parameters/RunShoot/blend_position", mouseposition)
+			animationTree.set("parameters/Idle/blend_position", mouseposition - position)
+			animationTree.set("parameters/Run/blend_position", mouseposition - position)
+			animationTree.set("parameters/IdleShoot/blend_position", mouseposition - position)
+			animationTree.set("parameters/RunShoot/blend_position", mouseposition - position)
 		"direction":
 			animationTree.set("parameters/Idle/blend_position", input_vector)
 			animationTree.set("parameters/Run/blend_position", input_vector)

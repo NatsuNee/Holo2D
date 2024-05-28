@@ -6,123 +6,53 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "",
-"class": "GitAPI",
-"language": "NativeScript",
-"path": "res://addons/godot-git-plugin/git_api.gdns"
-} ]
-_global_script_class_icons={
-"GitAPI": ""
-}
+config_version=5
 
 [application]
 
-config/name="Stealth2D"
-run/main_scene="res://holo2d/TestSpace.tscn"
+config/name="Ghost Protocol"
+run/main_scene="res://ghostprotocol/models/player/player1.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
 
 [display]
 
-window/size/width=426
-window/size/height=240
-window/size/fullscreen=true
-window/stretch/mode="2d"
-
-[editor]
-
-version_control_autoload_on_startup=true
-version_control_plugin_name="GitAPI"
-
-[gdnative]
-
-singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
-
-[gui]
-
-common/drop_mouse_on_gui_input_disabled=true
+window/size/viewport_width=1600
+window/size/viewport_height=900
 
 [input]
 
-ui_accept={
+Up={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":87,"key_label":0,"unicode":119,"echo":false,"script":null)
+]
 }
-ui_select={
+Down={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"echo":false,"script":null)
+]
 }
-ui_cancel={
+Left={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"echo":false,"script":null)
+]
 }
-ui_focus_next={
+Right={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
+]
 }
-ui_focus_prev={
+Fire={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
 }
-ui_left={
+Shift={
 "deadzone": 0.5,
-"events": [  ]
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194325,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
 }
-ui_right={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_up={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_down={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_page_up={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_page_down={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_home={
-"deadzone": 0.5,
-"events": [  ]
-}
-ui_end={
-"deadzone": 0.5,
-"events": [  ]
-}
-W_Key={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
-S_Key={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
-D_Key={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
-A_Key={
-"deadzone": 0.5,
-"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
- ]
-}
-
-[physics]
-
-common/enable_pause_aware_picking=true
-common/physics_interpolation=true
 
 [rendering]
 
-environment/default_environment="res://bin/default_env.tres"
+textures/canvas_textures/default_texture_filter=3
