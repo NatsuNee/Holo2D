@@ -3,9 +3,11 @@ extends CharacterBody2D
 var ACCELERATION = 2000
 var MAX_SPEED = 120
 const FRICTION = 800
+
 var lookat = "mouse"
-var running
+var playerstate
 var shooting
+var action = "gunsout"
 
 @onready var animationTree = $AnimationTree
 @onready var animationState = animationTree.get("parameters/playback")
@@ -24,26 +26,49 @@ func move(delta):
 	input_vector.x = Input.get_action_strength("Right") - Input.get_action_strength("Left")
 	input_vector.y = Input.get_action_strength("Down") - Input.get_action_strength("Up")
 	input_vector = input_vector.normalized()
-	if input_vector != Vector2.ZERO:
-		if Input.is_action_pressed("Shift"):
-			lookat = "direction"
-			running = "true"
-			animationState.travel("Run")
-			runningfunc()
-		else:
-			lookat = "mouse"
-			running = "false"
-			animationState.travel("RunShoot")
-			runningfunc()
-		lookatfunc(input_vector, mouseposition)
-		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
-	else:
-		lookat = "mouse"
-		running = "false"
-		runningfunc()
-		lookatfunc(input_vector, mouseposition)
-		animationState.travel("IdleShoot")
-		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+	match action:
+		"gunsout":
+			if input_vector != Vector2.ZERO:
+				if Input.is_action_pressed("Shift"):
+					lookat = "direction"
+					playerstate = "running"
+					animationState.travel("Run")
+					playerstatefunc()
+				else:
+					lookat = "mouse"
+					playerstate = "shooting"
+					animationState.travel("RunShoot")
+					playerstatefunc()
+				lookatfunc(input_vector, mouseposition)
+				velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+			else:
+				lookat = "mouse"
+				playerstate = "shooting"
+				playerstatefunc()
+				lookatfunc(input_vector, mouseposition)
+				animationState.travel("IdleShoot")
+				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+		
+		"casing":
+			if input_vector != Vector2.ZERO:
+				if Input.is_action_pressed("Shift"):
+					lookat = "direction"
+					playerstate = "running"
+					animationState.travel("Run")
+					playerstatefunc()
+				else:
+					lookat = "direction"
+					playerstate = "walk"
+					animationState.travel("Run")
+					playerstatefunc()
+				lookatfunc(input_vector, mouseposition)
+				velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
+			else:
+				lookat = "direction"
+				playerstate = "walk"
+				animationState.travel("Idle")
+				playerstatefunc()
+				velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 					
 func lookatfunc(input_vector, mouseposition):
 	match lookat:
@@ -58,23 +83,32 @@ func lookatfunc(input_vector, mouseposition):
 			animationTree.set("parameters/IdleShoot/blend_position", input_vector)
 			animationTree.set("parameters/RunShoot/blend_position", input_vector)
 			
-func runningfunc():
-	match running:
-		"true":
+func playerstatefunc():
+	match playerstate:
+		"running":
 			$Hands.hide()
 			$bulletpoint.hide()
 			$Gun.hide()
-			$bulletpoint.running = true
+			$bulletpoint.aimingstate = true
 			ACCELERATION = 2300
 			MAX_SPEED = 200
-		"false":
+			
+		"walk":
+			$Hands.hide()
+			$bulletpoint.hide()
+			$Gun.hide()
+			$bulletpoint.aimingstate = true
+			ACCELERATION = 20000
+			MAX_SPEED = 120
+			
+		"shooting":
 			$Gun.show()
 			$Hands.show()
 			$Gun.look_at(get_global_mouse_position())
 			$Head.look_at(get_global_mouse_position())
 			$Hands.look_at(get_global_mouse_position())
 			$bulletpoint.show()
-			$bulletpoint.running = false
+			$bulletpoint.aimingstate = false
 			ACCELERATION = 2000
 			MAX_SPEED = 120
 

@@ -1756,10 +1756,10 @@ _data = {
 }
 
 [sub_resource type="AnimationNodeAnimation" id="41"]
-animation = &"IdleLeft"
+animation = &"IdleDown"
 
 [sub_resource type="AnimationNodeAnimation" id="42"]
-animation = &"IdleLeft"
+animation = &"IdleUp"
 
 [sub_resource type="AnimationNodeAnimation" id="43"]
 animation = &"IdleRight"
@@ -1935,7 +1935,6 @@ script = ExtResource("1_mmlqw")
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
 position = Vector2(0.5, -32)
-zoom = Vector2(3, 3)
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.392157)

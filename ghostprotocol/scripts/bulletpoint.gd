@@ -6,7 +6,7 @@ extends Node2D
 
 var bullet = preload("res://ghostprotocol/models/props/bullet.tscn")
 var can_fire = true
-var running = false
+var aimingstate = false
 var shootingnetwork
 var mouseposition
 var secondaryweapon
@@ -36,7 +36,7 @@ func _physics_process(_delta):
 func shoot():
 	look_at(get_global_mouse_position())
 	
-	if Input.is_action_just_pressed("Fire") and can_fire and running == false:
+	if Input.is_action_just_pressed("Fire") and can_fire and aimingstate == false:
 		get_parent().shooting = true
 		var bullet_instance = bullet.instantiate()
 		bullet_instance.position = $point.get_global_position()
